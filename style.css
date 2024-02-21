@@ -1,0 +1,149 @@
+    * {
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Karla', sans-serif;
+        background-color: hsl(204, 43%, 93%);
+    }
+    
+    .container {
+        margin: 3.5rem 1.5rem;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .one {
+        background-color: white;
+        padding: 2rem 1.3rem;
+    }
+    
+    .one h3 {
+        margin-bottom: 1.8rem;
+        color: hsl(179, 62%, 43%);
+    }
+    
+    .one h4 {
+        margin-bottom: 1.2rem;
+        color: hsl(71, 73%, 54%);
+    }
+    
+    .one p {
+        color: hsl(218, 22%, 67%);
+    }
+    
+    
+    
+    
+    
+    .two {
+        background-color: hsl(179, 62%, 43%);
+        padding: 1.5rem 1.3rem;
+        color: white;
+    }
+    
+    .two h3 {
+        margin-bottom: 1.3rem;
+    }
+    
+    .two div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .two div span:first-of-type {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .two div span:last-of-type {
+        opacity: 0.5;
+    }
+    
+    .two button {
+        width: 100%;
+        margin-top: 1.7rem;
+        border: none;
+        outline: none;
+        padding: 0.7rem 0;
+        font-size: 16px;
+        border-radius: 3px;
+        background-color: hsl(71, 73%, 54%);
+        color: white;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .three {
+        background-color: hsla(179, 62%, 43%, 0.8);
+        color: white;
+        padding: 1.5rem 1.3rem;
+    }
+    
+    .three h3 {
+        margin-bottom: 1.4rem;
+    }
+    
+    .three ul {
+        list-style-type: none;
+    }
+    
+    .three ul li {
+        margin-bottom: 3px;
+        opacity: 0.6;
+    }
+    
+    
+    @media (min-width: 400px) {
+        .one {
+            padding: 2rem 2.6rem;
+        }
+        .two {
+            padding: 1.5rem 2.6rem;
+        }
+        .three {
+            padding: 1.5rem 2.6rem;
+        }
+    }
+    
+    
+    @media (min-width:600px) {
+         
+         main {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             
+         }
+         
+         .two button:hover {
+        cursor: pointer;
+    }
+         
+         
+        .container {
+            grid-template-columns: 1fr 1fr;
+            width: 615px;
+            
+        }
+        .one {
+            grid-column: span 2;
+        }
+        
+        
+        
+    }
+    
